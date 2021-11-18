@@ -1,65 +1,78 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <!-- * Что-то на умном * -->
-    <meta name="viewport" content="width=device-width">
-    <!-- * Что-то дополнительное на умном * -->
-    <meta name="theme-color" content="#7356a2">
-    <meta name="og:title" content="Sha4ek">
-    <meta name="og:image" content="/assets/img/image.png">
-    <meta name="og:description" content="Доброго времени! Я Саша, недопрограммист с Дальнего Востока. Мне почти 15 лет. В свободное время увлекаюсь программированием и пишу простеньких ботов для Discord'а">
-    
-    <title>Sha4ek</title>
-    
-    <link rel="icon" href="assets/img/image.png">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <header>
-        <div class="main">
-            <h1 class="header"><img src="assets/img/image.png"> Sha4ek</h1>
+<html lang='ru'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Head -->
+        <title>Sha4ek Profile</title>
+        <link rel="icon" href="assets/img/avatar.png">
+        <!-- Styles -->
+        <link rel='stylesheet' href='assets/css/index.css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <!-- Embed -->
+        <meta name="theme-color" content="#7356a2">
+        <meta name="og:title" content="Sha4ek Profile">
+        <meta name="og:image" content="assets/img/avatar.png">
+        <meta name="og:description" content="Доброго времени! Я Саша, недопрограммист с Дальнего Востока">
+    </head>
+    <body>
+        <!-- Header -->
+        <div class='header'>
+            <div class='container flex'>
+                <a href='/' class='home flex'>
+                    <img src='assets/img/avatar.png'>
+                    <p>Sha4ek</p>
+                </a>
+                <ul>
+                    <a class='navbar' href='#about'><i class="fa fa-user fa-fw"></i>Обо мне</a>
+                    <a class='navbar' href='#projects'><i class="fa fa-trophy fa-fw"></i>Проекты</a>
+                    <a class='navbar' href='#contacts'><i class="fa fa-envelope-o fa-fw"></i>Обратная связь</a>
+                </ul>
+            </div>
         </div>
-    </header>
-
-    <section>
-        <div class="main">
-            <h2 class="title">Обо мне</h2>
-            <div class="about">
-                <div class="text-about">
-                    <p>Доброго времени, спасибо что зашли на сайт! Я Саша, мне 14 лет. Учусь программированию на Python около года. Пишу простеньких ботов для Discord'а</p>
+        <!-- About -->
+        <div id='about' class='about'>
+            <div class='container flex2'>
+                <div>
+                    <h1>Обо мне</h1>
+                    <p>Доброго времени! Я Саша, школьник с Дальнего Востока. Мне 14 лет. В свободное время увлекаюсь программированием и пишу ботов для дискорда. Изучаю Pascal, Python, HTML и CSS, в планах - JavaScript. Кроме программирования и учёбы, я занимаюсь танцами, а также стараюсь снова подняться до планки отличника</p>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section>
-        <div class="main">
-            <h2 class="title">Мои проекты</h2>
-            <div class="buttons">
-                <a class="button" href="https://discord.gg/DZQpXUht7q" target="_blank">Discord сервер "Sunrise"</a><br>
-                <br>
-                <a class="button" href="https://bcord.cc/b/coffeebot" target="_blank">Discord бот "CoffeeBot"</a>  
-                <br>
-                <br>
-                <a class="button" href="https://github.com/Sha4ek/CoffeePaginator" target="_blank">Python модуль "CoffeePaginator"</a>  
+        <!-- Projects -->
+        <div id='projects' class='projects'>
+            <h1>Проекты</h1>
+            <div class='container grid'>
+                <div>
+                    <a class='button' href='sunrise' target="_blank"><h3>Sunrise<i class="fa fa-external-link fa-fw"></i></h3></a>
+                    <p>Маленький сервер дискорда с приятным оформлением и дружелюбным коммьюнити</p>
+                </div>
+                <img src='assets/img/sunrise.png'>
+            </div>
+            <div class='container grid'>
+                <img src='assets/img/coffeebot.png'>
+                <div>
+                    <a class='button' href='coffeebot' target="_blank"><h3>CoffeeBot<i class="fa fa-external-link fa-fw"></i></h3></a>
+                    <p>Новый русскоязычный бот с маленьким функционалом, созданный для модерации и развлечений на сервере!</p>
+                </div>
+            </div>
+            <div class='container grid'>
+                <div>
+                    <a class='button' href='coffeepaginator' target="_blank"><h3>CoffeePaginator<i class="fa fa-external-link fa-fw"></i></h3></a>
+                    <p>Простой модуль на python для создания страниц при помощи библиотеки disnake</p>
+                </div>
+                <img src='assets/img/coffeepaginator.png'>
             </div>
         </div>
-    </section>
-
-    <section>
-        <div class="main">
-            <h2 class="title">Связь со мной</h2>
-            <div class="buttons2">
-                <a class="button2" href="https://t.me/sha4ek" target="_blank">Telegram</a>
-                <a class="button2" href="https://vk.com/sha4ek" target="_blank">ВКонтакте</a>
-                <a class="button2" href="https://discord.com/users/546502974499717122" target="_blank">Discord: Sha4ek#3306</a>
-            </div>
+        <!-- Contacts -->
+        <div id='contacts' class='contacts'>
+            <h1>Обратная связь</h1>
+            <a class='button' href='https://t.me/sha4ek' target="_blank"><p>Telegram<i class="fa fa-external-link fa-fw"></i></p></a>
+            <a class='button' href='https://discord.com/users/546502974499717122' target="_blank"><p>Discord: Sha4ek#3306<i class="fa fa-external-link fa-fw"></i></p></a>
         </div>
-    </section>
-
-    <footer>
-        <p>Права охраняет Дурной глаз © 2021 г.</p>
-    </footer>
-</body>
+        <!-- Footer -->
+        <div class='footer'>
+            <p>Права запечатаны Дурным глазом &copy; 2021</p>
+        </div>
+    </body>
 </html>
