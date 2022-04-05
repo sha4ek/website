@@ -152,3 +152,14 @@ h1 {
 .footer p {
 	margin: 16px;
 }
+
+
+@media (max-width: 1050px) {
+	.header {
+		height: auto;
+	}
+
+	.flex {
+		flex-direction: column;
+	}
+}
