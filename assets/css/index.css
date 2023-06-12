@@ -144,3 +144,11 @@ a:hover {
 		top: 22%;
 	}
 }
+
+@media (max-height: 880px) {
+	.main {
+		top: 24%;
+		left: 0%;
+		right: 0%;
+	}
+}
