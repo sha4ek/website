@@ -86,3 +86,25 @@ a:hover {
 .footer p {
 	margin: 14px;
 }
+
+@media (max-width: 990px) {
+	.main {
+		top: 28%;
+	}
+
+	.main ul {
+		display: inline-block;
+	}
+
+	.main a {
+		display: flex;
+	}
+}
+
+@media (max-width: 600px) {
+	.main {
+		top: 24%;
+		left: 14%;
+		right: 14%;
+	}
+}
