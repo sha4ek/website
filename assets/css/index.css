@@ -108,3 +108,39 @@ a:hover {
 		right: 14%;
 	}
 }
+
+@media (max-width: 570px) {
+	.navbar {
+		height: auto;
+	}
+
+	.navbar ul {
+		margin-bottom: 14px;
+	}
+
+	.flex {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 500px) {
+	.main {
+		top: 16%;
+		left: 4%;
+		right: 4%;
+	}
+}
+
+@media (max-width: 380px) {
+	.navbar ul {
+		display: inline-block;
+	}
+
+	.navbar a {
+		display: flex;
+	}
+
+	.main {
+		top: 22%;
+	}
+}
